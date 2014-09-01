@@ -4,6 +4,12 @@ var app = {
 	secret: 'f3fcf473f5a416a6b11a88c558241754'
 };
 
+if (Meteor.isClient) {
+	Tinytest.add("FBGraph - Undefined on client", function(test) {
+		test.equal(typeof FBGraph, "undefined", "Expected FBGraph to be undefined on client");
+	});
+}
+
 if (Meteor.isServer) {
 	Tinytest.add("FBGraph - ServiceConfiguration", function(test) {
 		ServiceConfiguration.configurations.remove({
@@ -16,6 +22,6 @@ if (Meteor.isServer) {
 		var friends = FBGraph.getFriends(1406755872880114, {
 			access_token: app.appId + '|' + app.secret
 		});
-		test.equal(3, friends.length, "Expected there to be 3 friends");
+		test.equal(friends.length, 3, "Expected there to be 3 friends");
 	});
 }
