@@ -2,7 +2,7 @@ Npm.depends({'fbgraph': '0.2.11'});
 
 Package.describe({
 	summary: "Node.js module to access the Facebook graph api.",
-	version: "1.0.1",
+	version: "1.0.2",
 	git: "https://github.com/stevezhu/meteor-fbgraph.git"
 });
 
