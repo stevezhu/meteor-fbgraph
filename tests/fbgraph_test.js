@@ -5,13 +5,13 @@ var app = {
 };
 
 if (Meteor.isClient) {
-	Tinytest.add("FBGraph - Undefined on client", function(test) {
-		test.equal(typeof FBGraph, "undefined", "Expected FBGraph to be undefined on client");
+	Tinytest.add("FBGraph - FBGraph undefined on client", function(test) {
+		test.equal(typeof FBGraph, 'undefined', "Expected FBGraph to be undefined on client");
 	});
 }
 
 if (Meteor.isServer) {
-	Tinytest.add("FBGraph - ServiceConfiguration", function(test) {
+	Tinytest.add("FBGraph - Facebook ServiceConfiguration", function(test) {
 		ServiceConfiguration.configurations.remove({
 			service: 'facebook'
 		});
