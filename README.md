@@ -6,8 +6,8 @@ Currently using fbgraph v0.3.0
 
 ## Usage
 
-Consult [fbgraph](http://criso.github.io/fbgraph/) for documentation.  
-The only difference is that the `graph` referenced in the readme is instead `FBGraph` in this package.
+Can only be used server side. Consult [fbgraph](http://criso.github.io/fbgraph/) for documentation.  
+The only difference is that the `graph` referenced in the readme is instead `FBGraph` in this package. You do not have to require the module yourself.
 
 Example
 ```
