@@ -2,7 +2,7 @@
 
 A meteor wrapper package for [fbgraph](http://criso.github.io/fbgraph/)
 
-Currently using fbgraph v0.3.0
+Currently using fbgraph v1.0.0
 
 ## Usage
 
